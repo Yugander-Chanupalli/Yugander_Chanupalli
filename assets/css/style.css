@@ -2032,16 +2032,6 @@ textarea.form-input::-webkit-resizer {
   .social-list {
     justify-content: center;
   }
-  .chatbot-container {
-  /* Optional: Add custom styles for the chatbot container */
-}
-
- @media only screen and (max-width: 768px) {
-   .chatbot-container {
-     display: none;
-   }
- }
-
   /**
 	 * RESUME
 	 */
