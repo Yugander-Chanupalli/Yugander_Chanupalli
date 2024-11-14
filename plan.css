@@ -1,0 +1,122 @@
+/* Base Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c1e;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 2em 0;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Add Task Section */
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    width: 90%;
+}
+
+.add-task input[type="text"] {
+    width: 80%;
+    padding: 0.8em;
+    font-size: 1em;
+    background: #2a2a2d;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add-task button {
+    padding: 0.8em 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.add-task button:hover {
+    background-color: #45a049;
+}
+
+/* Task List Styling */
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a2a2d;
+    color: #f0f0f0;
+    padding: 0.8em;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.task-list li:hover {
+    transform: scale(1.02);
+}
+
+.task-list li.completed {
+    background-color: #37474f;
+}
+
+.task-list li.completed .task-text {
+    color: #90caf9;
+    text-decoration: line-through;
+}
+
+/* Style for task text only */
+.task-text {
+    flex: 1;
+}
+
+/* Checkbox Styling */
+.task-list li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #90caf9;
+    cursor: pointer;
+}
+
+/* Delete Button */
+.delete-button {
+    background: transparent;
+    border: none;
+    color: #ff5252;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0.2em;
+    transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+    color: #ff1744;
+}

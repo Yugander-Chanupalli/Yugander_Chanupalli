@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Plan Tracker</title>
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+    <header>
+        <h1>My Learning Plan Tracker</h1>
+        <p>Track your progress in React, DSA, and Cybersecurity</p>
+    </header>
+    <main>
+        <section class="add-task">
+            <input type="text" id="newTaskInput" placeholder="Add new task..." />
+            <button onclick="addTask()">Add Task</button>
+        </section>
+        
+        <div id="taskContainer">
+            <h2>Tasks</h2>
+            <div class="task-list">
+                <ul id="taskList">
+                    <!-- Tasks will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="plan.js"></script>
+</body>
+</html>
